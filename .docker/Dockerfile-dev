@@ -1,0 +1,12 @@
+FROM rocker/tidyverse:4.0.0
+
+RUN apt-get update
+RUN apt-get install -y --no-install-recommends git
+RUN RUN apt-get clean
+
+RUN mkdir wd
+WORKDIR /wd
+
+COPY . .
+
+RUN git init
