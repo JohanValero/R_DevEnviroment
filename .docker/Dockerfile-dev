@@ -8,5 +8,3 @@ RUN mkdir wd
 WORKDIR /wd
 
 COPY . .
-
-RUN git init
